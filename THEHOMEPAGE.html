@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html lang="ms">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KaunselKV</title>
-  <link rel="stylesheet" href="THEHOMEPAGECSS.css">
-  <link rel="stylesheet" href="THEHOMEPAGECSS.JS">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KaunselKV - Navbar</title>
+  <link rel="stylesheet" href="THEHOMEPAGECSS.css" />
+  <script defer src="THEHOMEPAGEJS.JS"></script>
 </head>
-
 <body>
 
-<!--THE NAV BAR START-->
-<nav style="background: linear-gradient(to right, #7B1FA2, #9C27B0); padding: 1rem;">
-  <ul style="display: flex; justify-content: center; gap: 2rem; list-style: none; margin: 0; color: white; font-weight: bold;">
-    <li><a href="#" style="color: white; text-decoration: none;">Panel Kaunselor</a></li>
-    <li><a href="#" style="color: white; text-decoration: none;">Tempahan Sesi</a></li>
-    <li><a href="#" style="color: white; text-decoration: none;">Perkhidmatan Kami</a></li>
-  </ul>
+<nav class="navbar">
+  <div class="navbar-container">
+    <div class="logo">KaunselKV</div>
+    <ul class="nav-links" id="navLinks">
+      <li class="dropdown">
+        <a href="#">PANEL KAUNSELOR ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">MUHIRMAN BIN MU-ALIM</a></li>
+          <li><a href="#">TANITA ANAK NUMPANG</a></li>
+          <li><a href="#">WHILEMINA THIMAH ANAK GREGORY JIMBUN</a></li>
+        </ul>
+      </li>
+      <li><a href="#">TENTANG KAMI</a></li>
+      <li class="dropdown">
+        <a href="#">PERKHIDMATAN ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Kaunseling Individu</a></li>
+          <li><a href="#">Psikometrik</a></li>
+        </ul>
+      </li>
+      <li><a href="#">HUBUNGI</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </div>
 </nav>
-<!--THE NAV BAR END-->
 
-<!--THE BACKGROUND START-->
-  <div class="background-div"></div>
-  <img src="mainbacks.jpg" alt="Background">
-<!--THE BACKGROUND END-->
+<!-- Dummy content to see scroll -->
+<div class="content">
+  <h1>Selamat Datang ke KaunselKV</h1>
+  <p>This is a WOWZERZ navbar!</p>
+</div>
 
 </body>
 </html>
