@@ -69,7 +69,7 @@ body, html {
   position: absolute;
   top: 100%;
   left: 0;
-background: linear-gradient(to left, #fdfdfd, #df50f0, #8e44ad);
+  background: linear-gradient(to left, #fdfdfd, #df50f0, #8e44ad);
   padding: 0.5rem 0;
   display: none;
   border-radius: 8px;
@@ -129,4 +129,75 @@ background: linear-gradient(to left, #fdfdfd, #df50f0, #8e44ad);
   margin-top: 120px;
   text-align: center;
   padding: 3rem;
+}
+
+/* video */
+.video-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+#greeting-text {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 0px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+  animation: fade 1.5s ease-in-out;
+}
+
+@keyframes fade {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.animated-button {
+  padding: 14px 36px;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  border-radius: 50px;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.animated-button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #00aaff, #0051cc);
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(0, 183, 255, 0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(0, 183, 255, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(0, 183, 255, 0); }
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.6s ease-in;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.6s ease-out;
 }
